@@ -6,4 +6,4 @@ Game_15_pazzle
 
 https://metanit.com/sharp/wpf/4.php - можно почитать о различных компоновках элементов.
 
-Также прилагаю пример с занятия FirstApp.zip
+
