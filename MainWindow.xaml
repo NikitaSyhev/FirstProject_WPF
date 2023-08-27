@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:FirstProject_W_F"
         mc:Ignorable="d"
         Title="MainWindow" MinHeight="458" MinWidth="400"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded"
+        >
     <DockPanel LastChildFill="True">
         <Grid x:Name="Grid">
             <Grid.RowDefinitions>
@@ -16,109 +18,106 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition Width="146*"/>
+                <ColumnDefinition Width="146*"/>
+                <ColumnDefinition Width="146*"/>
+                <ColumnDefinition Width="137*"/>
+                <ColumnDefinition Width="9*"/>
 
             </Grid.ColumnDefinitions>
-            <Button Content="Button"  x:Name="Button0" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            <Button Content="Button"  x:Name="Button0" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
-            Grid.Row="0"
-            Grid.Column="0"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="0"/>
-            <Button Content="Button"  x:Name="Button1" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Grid.Row="0"         
+            FontFamily="Arial Black" Height="90" Margin="0,13,0,0"
+                    Tag="0" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button1" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="0"
             Grid.Column="1"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="1"/>
-            <Button Content="Button"  x:Name="Button2" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="0,13,0,0"
+                    Tag="1" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button2" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="0"
             Grid.Column="2"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="2"/>
-            <Button Content="Button"  x:Name="Button3" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="0,13,0,0"
+                    Tag="2" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button3" HorizontalAlignment="Left" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="0"
             Grid.Column="3"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="3"/>
+            FontFamily="Arial Black" Height="90" Margin="5,13,0,0"
+                    Tag="3" Grid.ColumnSpan="2" Click="Button_Click"/>
 
-            <Button Content="Button"  x:Name="Button4" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            <Button Content="Button"  x:Name="Button4" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
-            Grid.Row="1"
-            Grid.Column="0"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="4"/>
-            <Button Content="Button"  x:Name="Button5" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Grid.Row="1"         
+            FontFamily="Arial Black" Height="90" Margin="0,12,0,0"
+                    Tag="4" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button5" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="1"
             Grid.Column="1"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="5"/>
-            <Button Content="Button"  x:Name="Button6" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="0,12,0,0"
+                    Tag="5" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button6" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="1"
             Grid.Column="2"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="6"/>
-            <Button Content="Button"  x:Name="Button7" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="0,12,0,0"
+                    Tag="6" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button7" HorizontalAlignment="Left" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="1"
             Grid.Column="3"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="7"/>
-            <Button Content="Button"  x:Name="Button8" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="5,12,0,0"
+                    Tag="7" Grid.ColumnSpan="2" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button8" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
-            Grid.Row="2"
-            Grid.Column="0"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="8"/>
-            <Button Content="Button"  x:Name="Button9" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Grid.Row="2"         
+            FontFamily="Arial Black" Height="90" Margin="0,13,0,0"
+                    Tag="8" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button9" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="2"
             Grid.Column="1"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="9"/>
-            <Button Content="Button"  x:Name="Button10" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="0,13,0,0"
+                    Tag="9" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button10" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="2"
             Grid.Column="2"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="10"/>
-            <Button Content="Button"  x:Name="Button11" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="0,13,0,0"
+                    Tag="10" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button11" HorizontalAlignment="Left" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="2"
             Grid.Column="3"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="11"/>
-            <Button Content="Button"  x:Name="Button12" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="5,13,0,0"
+                    Tag="11" Grid.ColumnSpan="2" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button12" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
-            Grid.Row="3"
-            Grid.Column="0"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="12"/>
-            <Button Content="Button"  x:Name="Button13" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            Grid.Row="3"         
+            FontFamily="Arial Black" Height="90" Margin="0,12,0,0"
+                    Tag="12" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button13" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="3"
             Grid.Column="1"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="13"/>
-            <Button Content="Button"  x:Name="Button14" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="0,12,0,0"
+                    Tag="13" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button14" HorizontalAlignment="Center" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="3"
             Grid.Column="2"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="14"/>
-            <Button Content="Button"  x:Name="Button15" HorizontalAlignment="Center" VerticalAlignment="Center" 
+            FontFamily="Arial Black" Height="90" Margin="0,12,0,0"
+                    Tag="14" Click="Button_Click"/>
+            <Button Content="Button"  x:Name="Button15" HorizontalAlignment="Left" VerticalAlignment="Top" 
             FontSize="36" 
             Grid.Row="3"
             Grid.Column="3"         
-            FontFamily="Arial Black" Height="90" Margin="5,5,5,0"
-                    Tag="15"/>
+            FontFamily="Arial Black" Height="90" Margin="5,12,0,0"
+                    Tag="15" Grid.ColumnSpan="2" Click="Button_Click"/>
 
 
         </Grid>
